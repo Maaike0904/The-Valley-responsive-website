@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Martel&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/mobile-first-demo/styles/style.css">
+    <script src="scripts/main.js" defer=""></script>
     <title>The Valley mobile wesite</title>
 </head>
 <body>
@@ -14,10 +15,15 @@
     <header>
         <nav>
             <img src="assets/logo-wit.png" alt="Witte logo van the Valley" class='logowit'>
+            <section class="site-nav">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </section>
+        </nav>
             <img src="assets/header-image.jpg" alt="Header foto" class="headerfoto">
             <h6>Case study</h6>
             <h3>Nike team</h3>
-        </nav>
     </header>
     <main>
         <h4>A long-term, creative partnership that turns athletes into designers</h4>
@@ -74,7 +80,9 @@
                 </p>
             </section>
 
-
+            <section>
+                <img src="assets/laptopenmobiel.png" class="basicimg">
+            </section>
             <!-- SLIDER IMAGE -->
             <p class='onderschrift'>
                 With a simplified customer-facing kit experience, we skipped photography and its limitations to embrace 3D models.
@@ -88,7 +96,9 @@
                 These clients had a clear idea of what they wanted but had no accurate way to capture and communicate it. To make matters worse, there were numerous ways their design could be misinterpreted. Teams would verbally describe how they wanted their kits to look and hoped that every person in the assembly chain would understand. Catalogue photography struggled to capture how material genuinely looked, leading to misaligned expectations for the final product. In the end, XX% of orders that did make it to Nike was returned for not matching the desired result.
             </p>
 
-            <!-- FOTO -->
+            <img src="assets/shirtkiezendesktop.png" class="basicimg">
+            <img src="assets/shirtkiezenmobile.png" class="basicimg">
+
             <p class='bodyXL'>
                 ‘The idea is strong as it's useful and personalised for teams and tailored to the needs of the various different sports. The execution is incredibly strong, easy to use, clear UX, enough choice and the 3D visuals are just next level.’
             
@@ -106,7 +116,8 @@
                 <br><br>In our search for the right partner, we met Smoke & Mirrors, specialists in scanning 3D fabrics. With a rig of 180 cameras capturing hi-res data where each final article of clothing, from shirts to socks, contained more than 2Gb. This method allowed for creating digital twins of Nike's materials, delivered in layers that enabled exceptionally flexible customization.
             </p>
 
-            <!-- 2 x IMG -->
+            <img src="assets/3dshirt.png" class="basicimg">
+            <img src="assets/3dshirtaan.png" class="basicimg">
             <h5>
                 A solution build to scale that creates digital twins
             </h5>
@@ -115,19 +126,48 @@
                 <br><br>For retailers, players and teams, it provides them with the latest Nike sport innovations and information. The simplified experience secures trust that players will receive precisely the kits they design. The signature Nike style for visuals means the kit configurator generates striking design assets that are applied throughout the customer journey—in social, shop experience, order confirmation and even aftercare.
             </p>
 
-            <!-- IMG COLLAGE -->
+            <img src="assets/collage1.png" class="basicimg">
+            <img src="assets/collage2.png" class="basicimg">
+            <img src="assets/collage3.png" class="basicimg">
             <p class="onderschrift">
                 The signature Nike style for visuals means the kit configurator generates striking design assets that are applied throughout the customer journey—in social, shop experience, order confirmation and even aftercare.
             </p>
 
+<!-- CONTACT -->
         <section class='contact'>
             <h6>
                 Want to know what digital can do for your service?
             </h6>
-            <button>
+                <button>Contact us</button>
+            <dialog class="modal">
+                <form method="dialog">
+                <label><p class="bodyL">Neem contact op</p>
+                        <legend><p class="bodyS">First Name</p></legend>
+                        <label for="name"></label>
+                        <input id="text" required type="text">
+
+                        <legend><p class="bodyS">Last Name</p></legend>
+                        <label for="name"></label>
+                        <input id="text" required type="text">
+
+                        <legend><p class="bodyS">Email Address</p></legend>
+                        <label for="mail"></label>
+                        <input id="mail" required type="email">
+
+                        <legend><p class="bodyS">Additional Comments</p></legend>
+                        <label for="text"></label>
+                        <input id="text" required type="text">
+                    <button>Send</button>
+                </label>
+                </form>
+            </dialog>
+
+
+            <!-- <button>
                 Contact us
-            </button>
-                <!-- IMG AUKE-->
+            </button> -->
+
+           <img src="assets/auke.png" class="contactfoto"> </img>
             <p class="naam">
                 Auke Meijer
             </p>
@@ -138,7 +178,7 @@
                 auke@thevalley.nl
             </p>
 
-                <!-- IMG PHILIP-->
+           <img src="assets/philip.png" class="contactfoto">
             <p class="naam">
                 Philip Kok
             </p>
@@ -153,7 +193,33 @@
             <h4 class='h4heading'>
                 Serving up <br> another case
             </h4>
-            <!-- IMG SLIDER -->
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="assets/howwecreatevalue1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="assets/howwecreate2.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
             <h6 class='h6heading'>
                 How we create value
             </h6>

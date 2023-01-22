@@ -1,3 +1,14 @@
+// BLOKJES ANIMATIE
+
+let verschijnen = document.querySelector('.blokjes')
+
+verschijnen.addEventListener('Scroll down', verschijnen)
+
+function show(){
+  verschijnen.classList.toggle('verschijnen')
+}
+
+
 // CONTACT BUTTON
 
 let modal= document.querySelector('.modal')

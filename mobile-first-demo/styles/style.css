@@ -1,3 +1,8 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
 /* --global-- */
 :root {
    --valley_red: #E02C35;
@@ -7,9 +12,14 @@
    --tekst_kleur: #111111;
 }
 
-* {
-   box-sizing: border-box;
-   margin: 0;
+body{
+   margin: 1rem; 
+   padding: 0;
+   font-family: 'Martel', serif;   
+   font-size: 16px;
+   line-height: 120%;
+   background-color: var(--valley_white);
+   overflow-x: clip;
 }
 
 nav{
@@ -19,7 +29,7 @@ nav{
    padding: 0 1rem;
    align-items: center;
    justify-content: space-between;
-   background-color: rgb(126, 126, 126);
+   /* background-color: rgb(126, 126, 126); */
    z-index: 100;
 }
 
@@ -45,15 +55,6 @@ button:hover{
    background: var(--valley_black);
 }
 
-body{
-   margin: 1rem; 
-   padding: 0;
-   font-family: 'Martel', serif;   
-   font-size: 16px;
-   line-height: 120%;
-   background-color: var(--valley_white);
-}
-
 p{
    font-family: Martel;
    font-size: 20px;
@@ -68,10 +69,11 @@ h3{
    font-family: 'Montserrat';
    font-size: 36px;
    font-weight: 700;
-   line-height: 72px;
+   line-height: 50px;
    letter-spacing: -0.035em;
    text-align: left;
-   color: var(--tekst_kleur);
+   color: var(--valley_white);
+   padding-bottom: 1em;
 }
 
 h4{
@@ -96,12 +98,12 @@ h5{
 
 h6{
    font-family: 'Montserrat';
-   font-size: 16px;
+   font-size: 20px;
    font-weight: 700;
    line-height: 38px;
    letter-spacing: -0.035em;
    text-align: left;
-   color: var(--tekst_kleur);
+   color: var(--valley_white);
 }
 
 .h3heading{
@@ -183,7 +185,7 @@ h6{
    line-height: 32px;
    letter-spacing: -0.035em;
    text-align: left;
-   color: var(--valley_black);
+   color: var(--valley_white);
 }
 
 .bodyXL{
@@ -198,32 +200,34 @@ h6{
    padding-bottom:-10px;
 }
 /* HEADER */
-
-header nav .site-nav div {
-    height: 3px;
-    width: 40px;
-    margin: 0.5rem;
-    background-color: white;
-}
-
-header{
-   height: 100vh;
+/* header{
+   height:100vh;
+   height: 100svh;
    max-height: 1080px;
+   background-image: url("assets/header-image.png");  
+   background-color: var(--valley_grey);
    position: relative;
-   background-image: url(assets/header-image.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center;
-   color: white;
+} */
+
+header nav .site-nav div {
+   height: 3px;
+   width: 40px;
+   margin: 0.5rem;
+   margin-right: 1.5em;
+   background-color: white;
 }
 
 .headerfoto{
-   width: 100%;
    position: relative;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   color: white;
+   z-index: -1;
+   margin: -1rem -1rem 0;
+   max-width: calc(100% + 2rem);
+}
+
+.header-tekst{
+   margin-top: -120px;
 }
 
 /* MAIN */
@@ -275,13 +279,32 @@ li{
 }
 
 /* GRIJZE BLOKJES */
-.blokje1, .blokje2, .blokje3{
+.blokjes{
    padding: 20px;
-   align-items: center;
+   display:grid;
+   place-items: left;
    margin-bottom: 10px;
    background-color: var(--valley_black);
    color: var(--valley_grey);
+
+  animation-name: verschijnen;
+  animation-duration: .7s;
+  animation-iteration-count:1;
 }
+
+@keyframes verschijnen{
+0%{
+   transform: translateY(50px);
+}
+50%{
+   transform: translateY(25px);
+}
+100%{
+   transform: translateY(0px);
+}
+}
+
+
 
 /* CONTACT */
 .contact{
@@ -289,6 +312,17 @@ li{
    padding: 25px;
    margin-left: -20px;
    margin-right: -20px;
+}
+
+.h6contact{
+   font-family: 'Montserrat';
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 38px;
+   letter-spacing: -0.035em;
+   text-align: left;
+   color: var(--valley_black);
+   padding-bottom: .5em;
 }
 
 .contactfoto{
@@ -307,16 +341,21 @@ li{
    font-family: 'Montserrat', sans-serif;
 }
 
-dialog::backdrop{
-   background:var(--valley_black);
-   opacity: 80%;
-}
-
 #text, #mail{
    border: 1px solid --valley_grey;
    height: 2em;
    width: 15em;
    margin-bottom: 30px;
+}
+
+.neem-contact-op{
+   font-family: Martel;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 32px;
+   letter-spacing: -0.035em;
+   text-align: left;
+   color: var(--valley_black);
 }
 
 /* CAROUSEL */
@@ -395,7 +434,6 @@ dialog::backdrop{
    to {opacity: 1}
 }
 
-
 /* FOOTER */
 .logowit{
    width:100px;
@@ -403,16 +441,12 @@ dialog::backdrop{
    margin-bottom: -15px;
 }
 
-.footer{
+footer{
    background-color: var(--valley_black);
    padding: 25px;
    margin-left: -20px;
    margin-right: -20px;
    color:var(--valley_grey);
-}
-
-a{
-
 }
 
 hr{
@@ -425,20 +459,33 @@ opacity: 10%;
 }
 
 @media (min-width: 40em){
-.blokje1, .blokje2, .blokje3{
+body{
+   margin: 3rem;
+   font-family: 'Martel', serif;   
+   font-size: 32px;
+   line-height: 120%;
+   background-color: var(--valley_white);
+   /* overflow-x: clip; */
+}
+
+.blokjes{
    padding: 20px;
-   align-items:flex-start;
-   margin-bottom: 10px;
+   display:inline-block;
+   margin: 5px;
    background-color: var(--valley_black);
    color: var(--valley_grey);
-   width: 15em;
+   float: left;
+   width: 30%;
 }
 
 .basicimg{
-   width:40%;
-   align-content: flex-start;
-   height: fit-content;
-   /* padding:20px; */
+		/* display: block; */
+		/* float: none;
+		width: 100%;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto; */
+	}
 }
 
 /* CONTACT */
@@ -447,5 +494,11 @@ opacity: 10%;
    padding-top:15px;
    padding-bottom:10px;
    align-content: flex-start;
+}
+
+/* HEADER */
+.headerfoto{
+   max-width: calc(100% + 6rem);
+   height: 50%;
 }
 }

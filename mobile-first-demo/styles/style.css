@@ -29,8 +29,16 @@ nav{
    padding: 0 1rem;
    align-items: center;
    justify-content: space-between;
-   /* background-color: rgb(126, 126, 126); */
+   width: calc(100% + 6rem);
    z-index: 100;
+}
+
+header nav .site-nav div {
+   height: 3px;
+   width: 40px;
+   margin: 0.5rem;
+   margin-right: 1.5em;
+   background-color: white;
 }
 
 button{
@@ -283,7 +291,6 @@ li{
    padding: 20px;
    display:grid;
    place-items: left;
-   margin-bottom: 10px;
    background-color: var(--valley_black);
    color: var(--valley_grey);
 
@@ -307,7 +314,7 @@ li{
 
 
 /* CONTACT */
-.contact{
+.contact-with-text-and-images{
    background-color: var(--valley_grey);
    padding: 25px;
    margin-left: -20px;
@@ -460,12 +467,69 @@ opacity: 10%;
 
 @media (min-width: 40em){
 body{
-   margin: 3rem;
+   margin: 6rem;
    font-family: 'Martel', serif;   
    font-size: 32px;
    line-height: 120%;
    background-color: var(--valley_white);
    /* overflow-x: clip; */
+}
+
+H3{
+   font-size: 60px;
+}
+
+H4{
+   font-size: 42px;
+   line-height: 1.2em;
+   margin-left: -2em;
+}
+
+H5{
+   font-size: 36px;
+   padding: 1em;
+}
+
+H6{
+   font-size: 32px;
+}
+
+.h4heading{
+   font-size: 42px;
+   padding: 1.5em;
+}
+
+.h6heading{
+   font-size: 32px;
+}
+
+.h6contact{
+   font-size: 32px;
+}
+
+.onderschrift{
+   font-size: 20px;
+}
+
+.quotenaam{
+   font-size: 20px;
+}
+
+.subkop{
+   font-size: 16px;
+   margin-top: 2em;
+   margin-bottom: 2em;
+}
+
+.case-introduction{
+   align-content: center;
+   padding-left:2.2em;
+   padding-bottom: -2.2em;
+}
+
+.title-rich-text-optional-content{
+   align-content: center;
+   padding-inline-start:1em;
 }
 
 .blokjes{
@@ -476,16 +540,30 @@ body{
    color: var(--valley_grey);
    float: left;
    width: 30%;
+   opacity: 1;
+   transition: all 360ms ease-out;
+   transition: transform 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   transform: translateY(100%);
+}
+
+.show{
+   opacity: 1;
+   transform: translateY(0);
 }
 
 .basicimg{
-		/* display: block; */
-		/* float: none;
+		display: block;
+		float: none;
 		width: 100%;
 		max-width: 700px;
 		margin-left: auto;
-		margin-right: auto; */
+		margin-right: auto;
 	}
+}
+
+/* QUOTE */
+.quote{
+   padding: 3.5em;
 }
 
 /* CONTACT */
@@ -498,7 +576,6 @@ body{
 
 /* HEADER */
 .headerfoto{
-   max-width: calc(100% + 6rem);
+   max-width: calc(100% + 2rem);
    height: 50%;
-}
 }

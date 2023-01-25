@@ -22,32 +22,11 @@ body{
    overflow-x: clip;
 }
 
-nav{
-   position: fixed;
-   display: flex;
-   width: 100%;
-   padding: 0 1rem;
-   align-items: center;
-   justify-content: space-between;
-   width: calc(100% + 6rem);
-   z-index: 100;
-}
-
-header nav .site-nav div {
-   height: 3px;
-   width: 40px;
-   margin: 0.5rem;
-   margin-right: 1.5em;
-   background-color: white;
-}
-
 button{
    width: 169px;
    height: 50px;
-
    background: var(--valley_red);
    border-radius: 42px;
-
    font-family: Montserrat;
    font-size: 16px;
    font-weight: 700;
@@ -55,7 +34,6 @@ button{
    letter-spacing: -0.035em;
    text-align: center;
    color: var(--valley_white);
-
    border-style: none;
 }
 
@@ -92,6 +70,8 @@ h4{
    letter-spacing: -0.035em;
    text-align: left;
    color: var(--tekst_kleur);
+   padding-top: 1em;
+   padding-bottom: .7em;
 }
 
 h5{
@@ -101,7 +81,7 @@ h5{
    line-height: 44px;
    letter-spacing: -0.035em;
    text-align: left;
-   padding-bottom: 18px;
+   padding-bottom: 1em;
 }
 
 h6{
@@ -163,8 +143,6 @@ h6{
    letter-spacing: -0.035em;
    text-align: left;
    color: var(--valley_red);
-   padding-left: 35px;
-   padding-bottom: 20px;
 }
 
 .bodyS{
@@ -204,34 +182,31 @@ h6{
    letter-spacing: -0.035em;
    text-align: left;
    color: var(--valley_black);
-   padding: 35px;
-   padding-bottom:-10px;
 }
+
 /* HEADER */
-/* header{
-   height:100vh;
-   height: 100svh;
-   max-height: 1080px;
-   background-image: url("assets/header-image.png");  
-   background-color: var(--valley_grey);
-   position: relative;
-   background-repeat: no-repeat;
-   background-size: cover;
-} */
+nav{
+   position: fixed;
+   width: 100%;
+   padding: 0 1rem;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1;
+   background-color: var(--valley_black);
+   margin: -1.5em;
+}
 
 header nav .site-nav div {
    height: 3px;
    width: 40px;
    margin: 0.5rem;
-   margin-right: 1.5em;
-   background-color: white;
+   background-color: var(--valley_white);
 }
 
 .headerfoto{
    position: relative;
    z-index: -1;
    margin: -1rem -1rem 0;
-   max-width: calc(100% + 2rem);
 }
 
 .header-tekst{
@@ -293,10 +268,11 @@ li{
    place-items: left;
    background-color: var(--valley_black);
    color: var(--valley_grey);
+   margin-bottom: 1em;
 
-  animation-name: verschijnen;
-  animation-duration: .7s;
-  animation-iteration-count:1;
+   animation-name: verschijnen;
+   animation-duration: .7s;
+   animation-iteration-count:1;
 }
 
 @keyframes verschijnen{
@@ -311,14 +287,10 @@ li{
 }
 }
 
-
-
 /* CONTACT */
 .contact-with-text-and-images{
    background-color: var(--valley_grey);
-   padding: 25px;
-   margin-left: -20px;
-   margin-right: -20px;
+   width: 100%;
 }
 
 .h6contact{
@@ -340,24 +312,25 @@ li{
 
 .modal{ 
    margin-inline:auto;
-   margin-top: 10rem;
+   margin-top: 3rem;
    border: none;
-   padding: 15px; 
    background-color:#FFFFFF;
    color:--valley_black;
    font-family: 'Montserrat', sans-serif;
+   padding: 2em;
+   z-index: 1;
 }
 
 #text, #mail{
    border: 1px solid --valley_grey;
-   height: 2em;
+   height: 3em;
    width: 15em;
    margin-bottom: 30px;
 }
 
 .neem-contact-op{
    font-family: Martel;
-   font-size: 20px;
+   font-size: 28px;
    font-weight: 400;
    line-height: 32px;
    letter-spacing: -0.035em;
@@ -365,8 +338,27 @@ li{
    color: var(--valley_black);
 }
 
+.closed-cross{
+   width: 25px;
+   height: 25px;
+   margin-left:10em;
+}
+
 /* CAROUSEL */
 /* Slideshow container */
+.arrow-left{
+   width: 20px;
+   height: 15px;
+   margin-left: 3.5em;
+   color: var(--valley_red);
+}
+
+.arrow-right{
+   width: 20px;
+   height: 15px;
+   margin-left: 10px;
+}
+
 .slideshow-container {
    max-width: 1000px;
    position: relative;
@@ -450,10 +442,15 @@ li{
 
 footer{
    background-color: var(--valley_black);
-   padding: 25px;
-   margin-left: -20px;
-   margin-right: -20px;
+   padding: 2em;
+   width: 100%;
    color:var(--valley_grey);
+}
+
+footer nav{
+   position: relative;
+   display: block;
+   width: 100%;
 }
 
 hr{
@@ -467,7 +464,7 @@ opacity: 10%;
 
 @media (min-width: 40em){
 body{
-   margin: 6rem;
+   padding: 2rem;
    font-family: 'Martel', serif;   
    font-size: 32px;
    line-height: 120%;
@@ -479,7 +476,7 @@ H3{
    font-size: 60px;
 }
 
-H4{
+h4{
    font-size: 42px;
    line-height: 1.2em;
    margin-left: -2em;
@@ -487,7 +484,6 @@ H4{
 
 H5{
    font-size: 36px;
-   padding: 1em;
 }
 
 H6{
@@ -509,6 +505,7 @@ H6{
 
 .onderschrift{
    font-size: 20px;
+   padding: 2rem;
 }
 
 .quotenaam{
@@ -540,7 +537,8 @@ H6{
    color: var(--valley_grey);
    float: left;
    width: 30%;
-   opacity: 1;
+   height:min-content;
+
    transition: all 360ms ease-out;
    transition: transform 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
    transform: translateY(100%);
@@ -563,7 +561,7 @@ H6{
 
 /* QUOTE */
 .quote{
-   padding: 3.5em;
+   padding: 2em;
 }
 
 /* CONTACT */
@@ -572,10 +570,22 @@ H6{
    padding-top:15px;
    padding-bottom:10px;
    align-content: flex-start;
+   display: flex;
+   display:inline-block;
 }
 
 /* HEADER */
+header nav .site-nav div {
+   /* margin-right: 6em; */
+   background-color: var(--valley_white);
+}
+
 .headerfoto{
-   max-width: calc(100% + 2rem);
-   height: 50%;
+   width: calc(100% + 4rem);
+}
+
+footer{
+   display: flex;
+   max-width: calc(100% + 12rem);
+
 }

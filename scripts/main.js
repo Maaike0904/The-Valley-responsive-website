@@ -24,6 +24,14 @@ openDialog.addEventListener("click", () => {
     modal.showModal();
 })
 
+// let modal=document.querySelector('.closed-cross')
+// let closeDialog = document.querySelector('image')
+
+// closeDialog.addEventListener("click", () => {
+//   modal.closeModal();
+// })
+
+
 // CAROUSEL
 let slideIndex = 1;
 showSlides(slideIndex);

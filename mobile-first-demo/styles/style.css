@@ -20,6 +20,7 @@ body{
    line-height: 120%;
    background-color: var(--valley_white);
    overflow-x: clip;
+   width: fit-content;
 }
 
 button{
@@ -189,11 +190,11 @@ nav{
    position: fixed;
    width: 100%;
    padding: 0 1rem;
-   align-items: center;
-   justify-content: space-between;
-   z-index: 1;
    background-color: var(--valley_black);
    margin: -1.5em;
+   display: flex;
+   justify-content: space-between;
+   padding: 1em;
 }
 
 header nav .site-nav div {
@@ -234,7 +235,6 @@ header nav .site-nav div {
    color: var(--valley_black);
 }
 
-/* MAIN */
 li{
    list-style: none;
    text-align: left;
@@ -291,6 +291,9 @@ li{
 .contact-with-text-and-images{
    background-color: var(--valley_grey);
    width: 100%;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh; 
 }
 
 .h6contact{
@@ -462,14 +465,15 @@ margin-top: 20px;
 opacity: 10%;
 }
 
+/* ------------MEDIA QUERY-------------- */
+
 @media (min-width: 40em){
 body{
-   padding: 2rem;
+   /* padding: 2rem; */
    font-family: 'Martel', serif;   
    font-size: 32px;
    line-height: 120%;
    background-color: var(--valley_white);
-   /* overflow-x: clip; */
 }
 
 H3{
@@ -479,7 +483,8 @@ H3{
 h4{
    font-size: 42px;
    line-height: 1.2em;
-   margin-left: -2em;
+   padding-top:0em;
+   padding-bottom: 0em;
 }
 
 H5{
@@ -493,6 +498,7 @@ H6{
 .h4heading{
    font-size: 42px;
    padding: 1.5em;
+   padding-left: 2em;
 }
 
 .h6heading{
@@ -520,13 +526,32 @@ H6{
 
 .case-introduction{
    align-content: center;
-   padding-left:2.2em;
+   padding-left:1.2em;
    padding-bottom: -2.2em;
 }
 
 .title-rich-text-optional-content{
    align-content: center;
    padding-inline-start:1em;
+}
+
+/* HEADER */
+header nav .site-nav div {
+   /* margin-right: 6em; */
+   background-color: var(--valley_white);
+}
+
+.headerfoto{
+   width: calc(100% + 4rem);
+   height: 650px;
+}
+
+nav{
+   padding-left: 2em;
+   padding-top:1em;
+   padding-bottom: .5em;
+   width:100%;
+   margin-left: -0.5em;
 }
 
 .blokjes{
@@ -565,23 +590,17 @@ H6{
 }
 
 /* CONTACT */
+.contact-with-text-and-images{
+   padding:1em;
+}
+
 .contactfoto{
-   width: 45%;  
+   width: 40%;  
    padding-top:15px;
    padding-bottom:10px;
    align-content: flex-start;
    display: flex;
    display:inline-block;
-}
-
-/* HEADER */
-header nav .site-nav div {
-   /* margin-right: 6em; */
-   background-color: var(--valley_white);
-}
-
-.headerfoto{
-   width: calc(100% + 4rem);
 }
 
 footer{

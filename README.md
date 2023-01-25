@@ -1,7 +1,7 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Responsive website voor the Valley :phone:
-<img width="1397" alt="Schermafbeelding 2023-01-25 om 14 51 38" src="https://user-images.githubusercontent.com/112861144/214581278-deb2e1d2-f0fc-4a6e-82d8-a0f03516e373.png"><img width="436" alt="Schermafbeelding 2023-01-25 om 14 52 36" src="https://user-images.githubusercontent.com/112861144/214581288-5bab3ff7-9f2c-4eb1-b7dd-4ea0ab362b77.png">
+<img width="419" alt="Schermafbeelding 2023-01-25 om 22 21 08" src="https://user-images.githubusercontent.com/112861144/214693724-03874b04-8341-4d02-86f7-720d58945158.png">
 
 ## Inhoudsopgave
 - Over the Valley
@@ -34,7 +34,7 @@ Wat er <b>niet</b> is gelukt:
 - Micro-animatie op mobiel
 - Kruisje bij het contactformulier werkend maken
 - Button contactformulier inactive maken als het formulier nog niet goed is ingevuld
-- Menu werkend (en mooi) maken
+- Menu werkend
 - Footer linkjes toevoegen
 - Afbeeldingen goed plaatsen op ipad/desktop
 - Contact-section mooi opmaken

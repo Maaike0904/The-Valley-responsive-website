@@ -13,6 +13,7 @@ Ontwerp en maak een interactieve website voor een opdrachtgever.
 - Gebruik van de website
 - Checklist wel/ niet gelukt
 - Kenmerken
+- Live website
 - Licentie
 
 
@@ -55,6 +56,9 @@ Wat er <b>niet</b> is gelukt :x: :
 - Dialog
 - Micro-animatie
 - Validation
+
+## Live website :globe_with_meridians:
+
 
 ## Licentie :100:
 

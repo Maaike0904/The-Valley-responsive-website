@@ -2,7 +2,7 @@
 
 # Responsive website voor the Valley :iphone: :computer:
 ![logo-rood](https://user-images.githubusercontent.com/112861144/214786579-0bf5e144-a817-4ebc-a48d-f641fdacda42.svg)
-<br><img width="419" alt="Schermafbeelding 2023-01-25 om 22 21 08" src="https://user-images.githubusercontent.com/112861144/214693724-03874b04-8341-4d02-86f7-720d58945158.png">
+<br><img width="353" alt="Schermafbeelding 2023-01-26 om 11 41 15" src="https://user-images.githubusercontent.com/112861144/214821576-143169b2-d721-4fba-af72-94699cc4738e.png">
 
 ## Opdracht :rocket:
 Ontwerp en maak een interactieve website voor een opdrachtgever.

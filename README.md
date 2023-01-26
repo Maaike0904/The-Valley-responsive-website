@@ -2,7 +2,7 @@
 
 # Responsive website voor the Valley :iphone: :computer:
 ![logo-rood](https://user-images.githubusercontent.com/112861144/214786579-0bf5e144-a817-4ebc-a48d-f641fdacda42.svg)
-<br><img width="353" alt="Schermafbeelding 2023-01-26 om 11 41 15" src="https://user-images.githubusercontent.com/112861144/214821576-143169b2-d721-4fba-af72-94699cc4738e.png">
+<br><img width="329" alt="Schermafbeelding 2023-01-26 om 12 10 44" src="https://user-images.githubusercontent.com/112861144/214821851-05d4035d-7926-490e-a977-f56262ecfa52.png"><img width="854" alt="Schermafbeelding 2023-01-26 om 12 11 11" src="https://user-images.githubusercontent.com/112861144/214821855-5fdc1a0c-8dab-4480-98b2-5febcf1b1fd8.png">
 
 ## Opdracht :rocket:
 Ontwerp en maak een interactieve website voor een opdrachtgever.
@@ -53,7 +53,7 @@ Wat er <b>niet</b> is gelukt :x: :
 - JS
 - Visual studio code
 - Figma
-
+<br>
 - Carousel
 - Dialog
 - Micro-animatie

@@ -1,8 +1,8 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Responsive website voor the Valley :iphone: :computer
+# Responsive website voor the Valley :iphone: :computer:
 ![logo-rood](https://user-images.githubusercontent.com/112861144/214786579-0bf5e144-a817-4ebc-a48d-f641fdacda42.svg)
-<img width="419" alt="Schermafbeelding 2023-01-25 om 22 21 08" src="https://user-images.githubusercontent.com/112861144/214693724-03874b04-8341-4d02-86f7-720d58945158.png">
+<br><img width="419" alt="Schermafbeelding 2023-01-25 om 22 21 08" src="https://user-images.githubusercontent.com/112861144/214693724-03874b04-8341-4d02-86f7-720d58945158.png">
 
 ## Inhoudsopgave :clipboard:
 - Over the Valley

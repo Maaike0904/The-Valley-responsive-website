@@ -53,7 +53,7 @@ Wat er <b>niet</b> is gelukt :x: :
 - JS
 - Visual studio code
 - Figma
-<br>
+
 - Carousel
 - Dialog
 - Micro-animatie

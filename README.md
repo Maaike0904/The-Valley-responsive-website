@@ -51,6 +51,8 @@ Wat er <b>niet</b> is gelukt :x: :
 - HTML
 - CSS
 - JS
+- Visual studio code
+- Figma
 
 - Carousel
 - Dialog
